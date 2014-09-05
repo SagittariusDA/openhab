@@ -267,9 +267,44 @@ public class ModelAdapterFactory extends AdapterFactoryImpl
         return createMIndustrialDigitalInAdapter();
       }
       @Override
+      public Adapter caseMBrickletIndustrialDigitalOut4(MBrickletIndustrialDigitalOut4 object)
+      {
+        return createMBrickletIndustrialDigitalOut4Adapter();
+      }
+      @Override
+      public Adapter caseDigitalActorDigitalOut4(DigitalActorDigitalOut4 object)
+      {
+        return createDigitalActorDigitalOut4Adapter();
+      }
+      @Override
       public Adapter caseDigitalActor(DigitalActor object)
       {
         return createDigitalActorAdapter();
+      }
+      @Override
+      public Adapter caseNumberActor(NumberActor object)
+      {
+        return createNumberActorAdapter();
+      }
+      @Override
+      public Adapter caseMBrickletSegmentDisplay4x7(MBrickletSegmentDisplay4x7 object)
+      {
+        return createMBrickletSegmentDisplay4x7Adapter();
+      }
+      @Override
+      public Adapter caseColorActor(ColorActor object)
+      {
+        return createColorActorAdapter();
+      }
+      @Override
+      public Adapter caseMBrickletLEDStrip(MBrickletLEDStrip object)
+      {
+        return createMBrickletLEDStripAdapter();
+      }
+      @Override
+      public Adapter caseDigitalActorIO16(DigitalActorIO16 object)
+      {
+        return createDigitalActorIO16Adapter();
       }
       @Override
       public Adapter caseMBrickletIO16(MBrickletIO16 object)
@@ -325,6 +360,11 @@ public class ModelAdapterFactory extends AdapterFactoryImpl
       public Adapter caseMBrickletMotionDetector(MBrickletMotionDetector object)
       {
         return createMBrickletMotionDetectorAdapter();
+      }
+      @Override
+      public Adapter caseMBrickletHallEffect(MBrickletHallEffect object)
+      {
+        return createMBrickletHallEffectAdapter();
       }
       @Override
       public Adapter caseMDualRelay(MDualRelay object)
@@ -879,6 +919,126 @@ public class ModelAdapterFactory extends AdapterFactoryImpl
   }
 
   /**
+   * Creates a new adapter for an object of class '{@link org.openhab.binding.tinkerforge.internal.model.MBrickletIndustrialDigitalOut4 <em>MBricklet Industrial Digital Out4</em>}'.
+   * <!-- begin-user-doc -->
+   * This default implementation returns null so that we can easily ignore cases;
+   * it's useful to ignore a case when inheritance will catch all the cases anyway.
+   * <!-- end-user-doc -->
+   * @return the new adapter.
+   * @see org.openhab.binding.tinkerforge.internal.model.MBrickletIndustrialDigitalOut4
+   * @generated
+   */
+  public Adapter createMBrickletIndustrialDigitalOut4Adapter()
+  {
+    return null;
+  }
+
+  /**
+   * Creates a new adapter for an object of class '{@link org.openhab.binding.tinkerforge.internal.model.DigitalActorDigitalOut4 <em>Digital Actor Digital Out4</em>}'.
+   * <!-- begin-user-doc -->
+   * This default implementation returns null so that we can easily ignore cases;
+   * it's useful to ignore a case when inheritance will catch all the cases anyway.
+   * <!-- end-user-doc -->
+   * @return the new adapter.
+   * @see org.openhab.binding.tinkerforge.internal.model.DigitalActorDigitalOut4
+   * @generated
+   */
+  public Adapter createDigitalActorDigitalOut4Adapter()
+  {
+    return null;
+  }
+
+  /**
+   * Creates a new adapter for an object of class '{@link org.openhab.binding.tinkerforge.internal.model.DigitalActor <em>Digital Actor</em>}'.
+   * <!-- begin-user-doc -->
+   * This default implementation returns null so that we can easily ignore cases;
+   * it's useful to ignore a case when inheritance will catch all the cases anyway.
+   * <!-- end-user-doc -->
+   * @return the new adapter.
+   * @see org.openhab.binding.tinkerforge.internal.model.DigitalActor
+   * @generated
+   */
+  public Adapter createDigitalActorAdapter()
+  {
+    return null;
+  }
+
+  /**
+   * Creates a new adapter for an object of class '{@link org.openhab.binding.tinkerforge.internal.model.NumberActor <em>Number Actor</em>}'.
+   * <!-- begin-user-doc -->
+   * This default implementation returns null so that we can easily ignore cases;
+   * it's useful to ignore a case when inheritance will catch all the cases anyway.
+   * <!-- end-user-doc -->
+   * @return the new adapter.
+   * @see org.openhab.binding.tinkerforge.internal.model.NumberActor
+   * @generated
+   */
+  public Adapter createNumberActorAdapter()
+  {
+    return null;
+  }
+
+  /**
+   * Creates a new adapter for an object of class '{@link org.openhab.binding.tinkerforge.internal.model.ColorActor <em>Color Actor</em>}'.
+   * <!-- begin-user-doc -->
+   * This default implementation returns null so that we can easily ignore cases;
+   * it's useful to ignore a case when inheritance will catch all the cases anyway.
+   * <!-- end-user-doc -->
+   * @return the new adapter.
+   * @see org.openhab.binding.tinkerforge.internal.model.ColorActor
+   * @generated
+   */
+  public Adapter createColorActorAdapter()
+  {
+    return null;
+  }
+
+  /**
+   * Creates a new adapter for an object of class '{@link org.openhab.binding.tinkerforge.internal.model.MBrickletLEDStrip <em>MBricklet LED Strip</em>}'.
+   * <!-- begin-user-doc -->
+   * This default implementation returns null so that we can easily ignore cases;
+   * it's useful to ignore a case when inheritance will catch all the cases anyway.
+   * <!-- end-user-doc -->
+   * @return the new adapter.
+   * @see org.openhab.binding.tinkerforge.internal.model.MBrickletLEDStrip
+   * @generated
+   */
+  public Adapter createMBrickletLEDStripAdapter()
+  {
+    return null;
+  }
+
+  /**
+   * Creates a new adapter for an object of class '{@link org.openhab.binding.tinkerforge.internal.model.MBrickletSegmentDisplay4x7 <em>MBricklet Segment Display4x7</em>}'.
+   * <!-- begin-user-doc -->
+   * This default implementation returns null so that we can easily ignore cases;
+   * it's useful to ignore a case when inheritance will catch all the cases anyway.
+   * <!-- end-user-doc -->
+   * @return the new adapter.
+   * @see org.openhab.binding.tinkerforge.internal.model.MBrickletSegmentDisplay4x7
+   * @generated
+   */
+  public Adapter createMBrickletSegmentDisplay4x7Adapter()
+  {
+    return null;
+  }
+
+  /**
+   * Creates a new adapter for an object of class '{@link org.openhab.binding.tinkerforge.internal.model.DigitalActorIO16 <em>Digital Actor IO16</em>}'.
+   * <!-- begin-user-doc -->
+   * This default implementation returns null so that we can easily ignore cases;
+   * it's useful to ignore a case when inheritance will catch all the cases anyway.
+   * <!-- end-user-doc -->
+   * @return the new adapter.
+   * @see org.openhab.binding.tinkerforge.internal.model.DigitalActorIO16
+   * @generated
+   */
+  public Adapter createDigitalActorIO16Adapter()
+  {
+    return null;
+  }
+
+  /**
    * Creates a new adapter for an object of class '{@link org.openhab.binding.tinkerforge.internal.model.MActor <em>MActor</em>}'.
    * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
@@ -964,21 +1124,6 @@ public class ModelAdapterFactory extends AdapterFactoryImpl
    * @generated
    */
   public Adapter createTFIOActorConfigurationAdapter()
-  {
-    return null;
-  }
-
-  /**
-   * Creates a new adapter for an object of class '{@link org.openhab.binding.tinkerforge.internal.model.DigitalActor <em>Digital Actor</em>}'.
-   * <!-- begin-user-doc -->
-   * This default implementation returns null so that we can easily ignore cases;
-   * it's useful to ignore a case when inheritance will catch all the cases anyway.
-   * <!-- end-user-doc -->
-   * @return the new adapter.
-   * @see org.openhab.binding.tinkerforge.internal.model.DigitalActor
-   * @generated
-   */
-  public Adapter createDigitalActorAdapter()
   {
     return null;
   }
@@ -1189,6 +1334,21 @@ public class ModelAdapterFactory extends AdapterFactoryImpl
    * @generated
    */
   public Adapter createMBrickletMotionDetectorAdapter()
+  {
+    return null;
+  }
+
+  /**
+   * Creates a new adapter for an object of class '{@link org.openhab.binding.tinkerforge.internal.model.MBrickletHallEffect <em>MBricklet Hall Effect</em>}'.
+   * <!-- begin-user-doc -->
+   * This default implementation returns null so that we can easily ignore cases;
+   * it's useful to ignore a case when inheritance will catch all the cases anyway.
+   * <!-- end-user-doc -->
+   * @return the new adapter.
+   * @see org.openhab.binding.tinkerforge.internal.model.MBrickletHallEffect
+   * @generated
+   */
+  public Adapter createMBrickletHallEffectAdapter()
   {
     return null;
   }
